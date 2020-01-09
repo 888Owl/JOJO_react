@@ -1,4 +1,4 @@
-body {
+* {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -7,7 +7,32 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@media (max-width:900px){
+  .appsolute {
+      color: rgb(200,200,200);
+      text-align: center !important;
+      background-image: url('https://lh3.googleusercontent.com/wesviPmuKM8eBLV_ZiECQ7HGr7E71AQlqedfyLIWhkhUef-lntwuQhXqsCjq39SuNEcmN6uiyXbPiTifpurv4CheewGGtIB6btiAhxjwqJ6g8v38I5XyOiBMsJRThPal2U8ZDAF-EQF4m3_BcyizW79zewHE_GVTAMRHGPBn2Q4SJMAWyuAuRMG6do1P_K0RefrbaT1D0kfFQ6y7KIw7Erej8PjcVd1Za8sO59JqvjcM6ypISMUmpyuvVZRjq_xUzBM4lB6ZiTnlpjLLMrAtIGzTP19506_z_wDf1S6dKdWAxhdE7innzB1ZYCCNMu21AbWt5HbtK1-COR7ecHrSJ0G_4S7Sul9hL0jbW3YRGCD9dmK6jgNnnX-K4TKC3h6K5Rrr6KUmJwGt2CaqIIiLwQkAShnCWU-ykj000vL7jIZ763mlMwf0AfaMO12LwZvBaLHQqndhqyxf3nS_WHQXXV4XwutNJmEDw_18polgLjDtEZ6R4wvEJDczFQealgFnRlK6-ng_C6l6p5d1IhYwGIIf_sq2tdSHvvWe7P9dCAu_pXfcynO0nGTBpOfOaYAA_pO2jLvdyg9ram6fQSWYXwzniAnpBPNrXFQ-IC_jI-M_9rD6jlz9pKjl-gC0bBDNG_lbxoLDfew7wCObDUdHX-wpNFSN-3WFEziy8OjFDIfGmOphtAnv=w972-h1604-no');
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }@media (max-width:1200px){
+    .appsolute {
+      color: rgb(200,200,200);
+      text-align: center;
+      background-image: url('https://lh3.googleusercontent.com/L1OSqzM2Zd0TY_5mP7DlE0-PJZjwbvHYkNJOFh-1AH0_7W0Lb0stQWNpH8l6pmOa2ymVOPKpibd5D88TruOb9OenfvwahAP9f0gplBxV2l8h9PsUNjwKWFptIz5wfiRDh2T4N8cx9x-or9lhBj3n0hyvjalDDYIx2rMa-fBY_7RlqS6aOEkG1hOUIM5faRsEu90h_gCo2fueNMPrEIi4XwKVY00LhKRpagahxpXVgDvc76EsbbyDxUSm792dCxMXbfbX4D7XUFfHKxoqjIknyHJGoeBzBdNZWRjJ1ZK-X3_yPZVx0fYHixqZ8gbvbhDWSue70La-c6cI4DsLa1Wur1yu-kL42k737wFAjE99mi9h0XYDO3LkXPRr7_BWe9SY7Hl_5W-PD3bjiIY4FWo1i_qmQk0Ukosi07QfIHvjaS-MbIZ2O3H6w7Lcu_w5e6x-KE3q55lvS1yWAXEgJ2nigNwvmDGpi9EnNRmYcmbUl4lcVLNwgRfDUMwWebq3OXwyq3LA91XQoH4QiwBoKrGU4u9dAkcYthFfGyUWGGvTrs19dO6M3rjFx_9DgqGJRJCtx88vE3UzoGF5l3qQseydwqZdNiMkmeB0kBjH7c8ZdOh_2yZPadIF2RXBSjraaSO-p7nXlVnSr3adAzuA9uGXl4wmsCegDf-pQ059U-JCLO19vHXxSjez=s250-k-rw-no');
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }@media (min-width:1200px){
+  .appsolute {
+      color: rgb(200,200,200);
+      background-color: black;
+      text-align: center;
+      background-image: url('./Images/j-101-min.jpg');
+      background-size: 100%, auto;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  }

@@ -1,25 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-function App() {
+import MainNavigation from './Navigation/MainNavigation';
+import Info from './Pages/Info';
+import Home from './Pages/Home';
+import Jobs from './Pages/Jobs';
+import Contact from './Pages/Contact';
+import Store from './Pages/Store';
+import Footer from './UI/Footer';
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+    <MainNavigation />
+    <main>
+    <Route path='/' exact={true}>
+    <Home />
+    </Route>
+    <Route path='/contact' exact={true}>
+    <Contact />
+    </Route>
+    <Route path='/info' exact={true}>
+    <Info />
+    </Route>
+    <Route path='/jobs' exact={true}>
+    <Jobs />
+    </Route>
+    <Route path='/store' exact={true}>
+    <Store />
+    </Route>
+    </main>
+    <Footer />
+    </Router>
   );
 }
 

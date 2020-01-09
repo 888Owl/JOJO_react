@@ -1,0 +1,13 @@
+.contact-container{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(5,5,5,0.4);
+  color:white;
+}
+  .contact-social {
+    font-size:25px;
+  }
+  .contact-space{
+    height:5%;
+  }

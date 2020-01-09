@@ -1,0 +1,22 @@
+import React from 'react';
+
+import './Contact.css';
+
+const Contact = () => {
+    return(
+        <div className="contact-container">
+    <div className="contact-social">
+      <p>香閣經紀團隊代表 <br/>
+        副總：Jojo <br/>
+        
+
+        經紀人：佑庭、小志</p>
+      <p className="contact-larger">請打手機（14：00過後）：0916162325 <br/> 或加 <br/> Line ID: C0961162325</p>
+      <img src="https://i.ibb.co/stnKvq4/j-line-min.jpg" width="60%" height="60%" alt="jojo's Line QR"/>
+
+    </div>
+  </div>
+  );
+};
+
+export default Contact;
