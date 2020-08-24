@@ -12,7 +12,7 @@ const Contact = () => {
 
         經紀人：佑庭、小志</p>
       <p className="contact-larger">請打手機（14：00過後）：0916162325 <br/> 或加 <br/> Line ID: C0961162325</p>
-      <img src="https://i.ibb.co/stnKvq4/j-line-min.jpg" width="60%" height="60%" alt="jojo's Line QR"/>
+      <img src={require('../Images/j-line-min.png')} width="300px" height="300px" alt="jojo's Line QR"/>
 
     </div>
   </div>

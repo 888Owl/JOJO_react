@@ -1,0 +1,17 @@
+@media (max-width: 900px) {
+    .nav-names {
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+      padding: 2px;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .nav-names {
+      color: white;
+      font-size: 40px;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+  }

@@ -3,15 +3,30 @@ import React from 'react';
 import './MainNavigation.css';
 import DesktopNav from './DesktopNav';
 
-const MainNavigation = () => {
+
+
+class MainNavigation extends React.Component {
+    constructor(){
+        super();
+        this.state={
+
+        };
+        this.handleSwap = this.handleSwap.bind(this);
+    }
+
+
+
+    handleSwap() {
+        let loc = window.location.pathname;
+        let x = document.getElementById(loc);
+        return x.style.color.gold;
+    };
+
+    render(){
     return(<React.Fragment>
-        <button className='button-mobile_burger'>
-        <span />
-        <span />
-        <span />
-        </button>
-        <DesktopNav />
+        <DesktopNav onClick={this.handleSwap}/>
         </React.Fragment>);
+    }
 };
 
 
