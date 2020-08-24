@@ -85,5 +85,25 @@
   }
 }
 .button-submit{
-  margin-bottom: 15px;
+  background-color: #0a0a22;
+  height: 6vh;
+  width: 18vw;
+  padding: 1vh;
+  color: aliceblue;
+  border-radius: 12px;
+  margin-bottom: 3vh;
+}
+
+.styled_input {
+  background-color: #0a0a22;
+  height: 5vh;
+  width: 18vw;
+  padding: 1vh;
+  color: aliceblue;
+  border-radius: 12px;
+}
+
+.troublesome{
+  position: absolute;
+  left:32.5vw;
 }

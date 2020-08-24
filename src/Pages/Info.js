@@ -5,9 +5,11 @@ import './Info.css';
 const Info = () => {
   return (
     <div className='info-div_main'>
+    <br/>
+    <br/>
       <div className="info-address">
         <p>
-          台北市忠孝東路四段270號B1 B1, No. 270, Sec 4, Zhongxiao E.Rd., Xinyi
+          台北市忠孝東路四段270號B1 B1, No. 270, Sec 4, Zhongxiao E.Rd., Xinyi<br/>
           Dist., Taipei 最近捷運：國父紀念館站
         </p>
       </div>

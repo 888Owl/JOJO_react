@@ -12,12 +12,60 @@ const Emoji = props => (
     {props.symbol}
   </span>
 );
+class Jobs extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      your_name: '',
+      age: '',
+      phone_number: '',
+      form_line: ''
+    }
+    this.changeName = this.changeName.bind(this);
+    this.changeAge = this.changeAge.bind(this);
+    this.changeNumber = this.changeNumber.bind(this);
+    this.changeLine = this.changeLine.bind(this);
+    }
+   
+  
 
-const Jobs = () => {
+    changeName(e){
+   const value = e.target.value
+   this.setState({
+    your_name: value
+   })
+}
+
+changeAge(e){
+  const value = e.target.value
+  this.setState({
+    age: value
+  })
+}
+
+changeNumber(e){
+  const value = e.target.value
+  this.setState({
+    phone_number: value
+  })
+}
+
+changeLine(e){
+  const value = e.target.value
+  this.setState({
+    form_line: value
+  })
+}
+
+
+render(){
+
   return (
     <div className="employment-container">
       <div className="employment-hours">
+      <br/>
         <h1 className="employment-heading">飯局女孩</h1>
+        <br/>
         <p className="p-hours">
           <span id="underline">工作性質</span>
           ：陪同出席宴會，跟客人互動或在旁協助客人與他生意往來的人士交流，
@@ -34,7 +82,9 @@ const Jobs = () => {
       </div>
       <div className="post-employment-hours"></div>
       <div className="employment-role">
+      <br/>
         <h1 className="employment-heading">合法店家高薪誠徵~聊天女孩</h1>
+        <br/>
         <p className="employment-incentives">
           <Emoji symbol="🔥" />
           保障月薪6萬起 + 業績獎金
@@ -57,6 +107,7 @@ const Jobs = () => {
         </p>
       </div>
       <div className="post-employment-role"></div>
+      <br />
       <div className="employment-application">
         <form
           className="employment-form"
@@ -64,30 +115,34 @@ const Jobs = () => {
           method="post"
           data-netlify="true"
         >
+          <span>
           <label>姓名:</label>
+          <input onChange={this.changeName} className='styled_input' type="text" name="your_name" value={this.state.your_name} />
           <br />
-          <input type="text" name="your-name" value="" />
-          <br />
+          </span>
+          <span>
           <label>年齡:</label>
+          <input onChange={this.changeAge} className='styled_input' type="text" name="age" value={this.state.age} />
           <br />
-          <input type="number" name="age" value="" />
+          </span>
+          <span>
+          <label className="troublesome">聯絡電話:</label>
+          <input onChange={this.changeNumber} style={{marginLeft: '5vw'}} className='styled_input' type="text" name="phone_number" value={this.state.phone_number} />
           <br />
-          <label>聯絡電話:</label>
-          <br />
-          <input type="number" name="phone-number" value="" />
-          <br />
+          </span>
+          <span>
           <label>Line:</label>
+          <input onChange={this.changeLine} className='styled_input' type="text" name="form_line" value={this.state.form_line} />
           <br />
-          <input type="text" name="form-line" value="" />
-          <br />
-          <button className='button-submit' type="submit" name="form-submit">
+          </span>
+          <button style={{marginLeft: '5vw'}} className='button-submit' type="submit" name="form-submit">
             送出
           </button>
           <br />
         </form>
       </div>
     </div>
-  );
-};
-
+  )
+}
+}
 export default Jobs;
