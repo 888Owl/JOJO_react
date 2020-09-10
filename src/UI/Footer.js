@@ -8,7 +8,7 @@ const Footer = () => {
     console.log(window.height);
     return(
         <div className='footer-body'>
-        <p id='footer_content'>Copyright © 2019 Jo-jo.club | Site Built by <a href='https://www.terminowl.com/' alt='Creators site.' >Terminowl</a></p>
+        <p id='footer_content'>Copyright © 2020 Jo-jo.club | Site Built by <a href='https://www.terminowl.com/' alt='Creators site.' >Terminowl</a></p>
         </div>
     );
 };

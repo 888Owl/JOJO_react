@@ -108,39 +108,7 @@ render(){
       </div>
       <div className="post-employment-role"></div>
       <br />
-      <div className="employment-application">
-        <form
-          className="employment-form"
-          action="employment-application"
-          method="post"
-          data-netlify="true"
-        >
-          <span>
-          <label>姓名:</label>
-          <input onChange={this.changeName} className='styled_input' type="text" name="your_name" value={this.state.your_name} />
-          <br />
-          </span>
-          <span>
-          <label>年齡:</label>
-          <input onChange={this.changeAge} className='styled_input' type="text" name="age" value={this.state.age} />
-          <br />
-          </span>
-          <span>
-          <label className="troublesome">聯絡電話:</label>
-          <input onChange={this.changeNumber} style={{marginLeft: '5vw'}} className='styled_input' type="text" name="phone_number" value={this.state.phone_number} />
-          <br />
-          </span>
-          <span>
-          <label>Line:</label>
-          <input onChange={this.changeLine} className='styled_input' type="text" name="form_line" value={this.state.form_line} />
-          <br />
-          </span>
-          <button style={{marginLeft: '5vw'}} className='button-submit' type="submit" name="form-submit">
-            送出
-          </button>
-          <br />
-        </form>
-      </div>
+      <a className="LazyEmail" href='mailto:huhu910706@gmail.com'><h1>給我發郵件</h1></a>
     </div>
   )
 }

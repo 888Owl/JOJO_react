@@ -12,10 +12,22 @@
     color:white;
     font-size: 1.5em;
   }
-  .responsive-map {
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    width: 50vw;
-    height: 50vh;
+  
+  @media (min-width: 900px){
+    .responsive-map {
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      width: 50vw;
+      height: 50vh;
+    }
+  }
+  @media (max-width: 900px){
+    .responsive-map {
+      position: absolute;
+      top: 35%;
+      left: 25%;
+      width: 50vw;
+      height: 50vh;
+    }
   }
